@@ -1,0 +1,19 @@
+.modal-header{
+  border: 0;
+}
+.modal-title{
+  font-size: 24px;
+  font-weight: bold;
+}
+.open{
+  display: inline-block;
+}
+.close{
+  display: none;
+}
+.collapsed .open{
+  display: none;
+}
+.collapsed .close{
+  display: inline-block;
+}

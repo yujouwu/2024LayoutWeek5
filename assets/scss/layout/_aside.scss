@@ -1,0 +1,18 @@
+.aside{
+  width: 296px;
+}
+.nav-item.active{
+  &::before{
+    content: "";
+    width: 4px;
+    height: 32px;
+    background: $success;
+    position: absolute;
+  }
+  .nav-link{
+    color: $success;
+  }
+}
+.aside .nav-item:hover{
+  background: $gray-400;
+}
