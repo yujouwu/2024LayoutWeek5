@@ -1,5 +1,8 @@
 .aside{
   width: 296px;
+  .nav-link{
+    color: $dark;
+  }
 }
 .nav-item.active{
   &::before{

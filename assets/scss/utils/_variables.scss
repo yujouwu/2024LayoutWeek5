@@ -300,7 +300,6 @@ $cyans: (
 // scss-docs-start theme-color-variables
 $primary:       $blue !default;
 $secondary:     $gray-600 !default;
-// $secondary:     $gray-400 !default; // *custom
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -567,10 +566,8 @@ $box-shadow-lg:               0 1rem 3rem rgba($black, .175) !default;
 $box-shadow-inset:            inset 0 1px 2px rgba($black, .075) !default;
 // scss-docs-end box-shadow-variables
 
-// $component-active-color:      $white !default;
-$component-active-color:      $dark !default;   // *custom
-// $component-active-bg:         $primary !default;
-$component-active-bg:         $gray-100 !default; // *custom
+$component-active-color:      $white !default;
+$component-active-bg:         $primary !default;
 
 // scss-docs-start focus-ring-variables
 $focus-ring-width:      .25rem !default;
@@ -957,7 +954,8 @@ $form-check-input-active-filter:          brightness(90%) !default;
 
 $form-check-input-bg:                     $input-bg !default;
 $form-check-input-border:                 var(--#{$prefix}border-width) solid var(--#{$prefix}border-color) !default;
-$form-check-input-border-radius:          .25em !default;
+// $form-check-input-border-radius:          .25em !default;
+$form-check-input-border-radius:          .125em !default;  // *custom
 $form-check-radio-border-radius:          50% !default;
 $form-check-input-focus-border:           $input-focus-border-color !default;
 $form-check-input-focus-box-shadow:       $focus-ring-box-shadow !default;
@@ -1215,8 +1213,7 @@ $navbar-toggler-border-radius:      $btn-border-radius !default;
 $navbar-toggler-focus-width:        $btn-focus-width !default;
 $navbar-toggler-transition:         box-shadow .15s ease-in-out !default;
 
-// $navbar-light-color:                rgba(var(--#{$prefix}emphasis-color-rgb), .65) !default;
-$navbar-light-color:                $dark !default; // *custom
+$navbar-light-color:                rgba(var(--#{$prefix}emphasis-color-rgb), .65) !default;
 $navbar-light-hover-color:          rgba(var(--#{$prefix}emphasis-color-rgb), .8) !default;
 $navbar-light-active-color:         rgba(var(--#{$prefix}emphasis-color-rgb), 1) !default;
 $navbar-light-active-color:         rgba(var(--#{$prefix}emphasis-color-rgb), 1) !default;
@@ -1370,7 +1367,8 @@ $card-box-shadow:                   null !default;
 $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
 $card-cap-padding-y:                $card-spacer-y * .5 !default;
 $card-cap-padding-x:                $card-spacer-x !default;
-$card-cap-bg:                       rgba(var(--#{$prefix}body-color-rgb), .03) !default;
+// $card-cap-bg:                       rgba(var(--#{$prefix}body-color-rgb), .03) !default;
+$card-cap-bg:                       $light !default; // *custom
 $card-cap-color:                    null !default;
 $card-height:                       null !default;
 $card-color:                        null !default;
@@ -1517,7 +1515,8 @@ $badge-border-radius:               var(--#{$prefix}border-radius) !default;
 // Modals
 
 // scss-docs-start modal-variables
-$modal-inner-padding:               $spacer !default;
+// $modal-inner-padding:               $spacer !default;
+$modal-inner-padding:               32px !default; // *custom
 
 $modal-footer-margin-between:       .5rem !default;
 
@@ -1616,8 +1615,10 @@ $list-group-item-color-scale:       40% !default; // Deprecated in v5.3.0
 // fusv-enable
 
 $list-group-hover-bg:               var(--#{$prefix}tertiary-bg) !default;
-$list-group-active-color:           $component-active-color !default;
-$list-group-active-bg:              $component-active-bg !default;
+// $list-group-active-color:           $component-active-color !default;
+$list-group-active-color:           $dark !default; // *custom
+// $list-group-active-bg:              $component-active-bg !default;
+$list-group-active-bg:              $gray-100 !default; // *custom
 // $list-group-active-border-color:    $list-group-active-bg !default;
 $list-group-active-border-color:    $gray-400 !default; // *custom
 
